@@ -15,7 +15,7 @@ const FileRetrieval = () => {
         event.preventDefault();
 
         try {
-            const response = await axios.get(`http://localhost:5000/files/download/${fileId}`, {
+            const response = await axios.get(`https://uploadbackend-jjow.onrender.com/files/download/${fileId}`, {
                 responseType: 'blob', // Important to handle binary data
             });
 
